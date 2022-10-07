@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0d852bba2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="container bg-gray-700">
+    <div
+      class="w-full justify-center rounded-md items-center md:w-[700px] items-center md:ml-[350px] md:h-[420px] bg-white pl-[100px] pr-[100px] shadow-xl"
+    >
+      <h1
+        id="quote"
+        class="flex text-xl md:tracking-tight md:text-2xl justify-center items-center text-center mt-[100px] pt-[50px]"
+      >
+        Quote
+      </h1>
+      <p
+        id="author"
+        class="flex text-xl font-bold md:tracking-tight md:text-3xl justify-center items-center mt-[50px] text-center pb-[50px]"
+      >
+        Author
+      </p>
+      <button
+        id="btn"
+        class="flex px-8 py-3 font-semibold dark:bg-blue-100 dark:text-gray-800 justify-center items-center mt-[50px] fixed items-end md:ml-[180px] ml-[80px]"
+      >
+        New Quote
+      </button>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
